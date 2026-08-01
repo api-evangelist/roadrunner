@@ -1,8 +1,24 @@
 aid: roadrunner
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/roadrunner.png
 name: Roadrunner
-description: 'Roadrunner is a company surfaced as a portfolio company of fifth-wall, kleiner-perkins and
-  added to the API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'RoadRunner is a tech-enabled managed waste and recycling services company operating across
+  all 50 US states, serving 14,000+ commercial customers in hospitality, healthcare, retail, logistics
+  and manufacturing. It consolidates multi-location waste programs and layers proprietary optimization
+  tooling (Oversite, Waste Metering, BillCheck, Priceshield) plus the RecycleMORE and CleanStream recycling
+  programs on top of hauler networks. Backed by Fifth Wall and Kleiner Perkins in the climate sector.
+  As of this enrichment pass RoadRunner publishes a marketing site and a customer + payment portal but
+  no public developer/API surface, so no OpenAPI, SDK, MCP or event artifacts were found.'
 url: https://raw.githubusercontent.com/api-evangelist/roadrunner/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Climate
+- Waste Management
+- Recycling
+- Sustainability
+- Managed Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/roadrunner-domain-security.yml
 - type: Website
   url: https://www.roadrunnerwm.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
